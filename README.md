@@ -12,3 +12,4 @@ This simulation covers the low angle of attack dynamics of F18
 |Wing span, $b$|11.405|$m$|
 |Mean aerodynamic chord, $c$|3.511|$m$|
 |Wing planform area, $S$|37.16|$m^2$|
+|Roll moment of inertia, $I_{xx}$|31181.88|$kg-m^2$|
