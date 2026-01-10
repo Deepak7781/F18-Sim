@@ -15,3 +15,4 @@ This simulation covers the low angle of attack dynamics of F18
 |Roll moment of inertia, $I_{xx}$|31181.88|$kg-m^2$|
 |Pitch moment of inertia, $I_{yy}$|205113.07|$kg-m^2$|
 |Yaw moment of inertia, $I_{zz}$|230400.22|$kg-m^2$|
+|Maximum thrust, $T_m$|49817.6|$N$|
