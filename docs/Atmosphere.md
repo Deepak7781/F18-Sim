@@ -119,3 +119,15 @@ $$
 $$
     \rho(h) = \rho_{11}e^{-\frac{g(h - 11000)}{RT_{11}}}
 $$
+
+### Reference Values (ISA Standard)
+
+- $T_0$ = 288.16 K
+- $P_0$ = 101325 Pa
+- $\rho_0$ = 1.225 $\frac{kg}{m^3}$ 
+- $g_0$ = 9.81 $m/s^2$
+- R = 287 $J/kg\cdot K$
+- $\gamma$ = 1.4
+
+
+
