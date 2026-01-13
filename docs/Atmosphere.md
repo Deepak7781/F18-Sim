@@ -79,7 +79,9 @@ $$
 $$
     a(h) = \sqrt{\gamma RT  }
 $$
+
  ---
+ 
 ### Complete Troposhere ISA (0 - 11 km)
 
 #### Temperature
@@ -175,7 +177,7 @@ From these pressures, airspeed is inferred.
 
 #### Mach Number to Total Pressure
 
-For compressible, isentropic flow:
+For compressible, isentropic flow
 
 $$
 \boxed{
@@ -223,6 +225,7 @@ This removes altitude dependence.
 Using the inverse compressible flow relation:
 
 $$
+
 \boxed{
 V_{CAS}
 =
