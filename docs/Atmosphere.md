@@ -79,7 +79,7 @@ $$
 $$
     a(h) = \sqrt{\gamma RT  }
 $$
-
+ ---
 ### Complete Troposhere ISA (0 - 11 km)
 
 #### Temperature
@@ -100,6 +100,7 @@ $$
     \rho(h) = \rho_0 \left(\frac{T(h)}{T_0}\right)^{\frac{-g0}{LR}-1}
 $$
 
+---
 ### Complete Stratosphere ISA (11 - 20 km)
 
 #### Temperature
@@ -133,5 +134,139 @@ $$
 
 
 
+In aircraft flight dynamics and control systems, **airspeed** is not just one quantity.  
+Different forms of airspeed are used for different purposes:
+
+- TAS (True Airspeed) – actual speed of aircraft relative to air
+- CAS (Calibrated Airspeed) – speed derived from pressure measurements
+- EAS (Equivalent Airspeed) – TAS corrected for density effects
+
+---
+
+### Why Do We Need CAS?
+
+#### Key idea:
+**Aircraft sensors do not measure velocity directly.**  
+They measure **pressure**.
+
+### Real aircraft instruments:
+- Pitot tube → **Total pressure** $P_t$
+- Static port → **Static pressure** $P_s$
+
+From these pressures, airspeed is inferred.
+
+### Why not directly use TAS?
+- TAS depends on **altitude and temperature**
+- Flight envelopes, stall speeds, and limits are defined using **CAS**
+- CAS remains consistent with **sea-level reference conditions**
+
+**CAS is what pilots and flight control laws trust**
+
+---
+
+### Physical Background
+
+#### Assumptions
+- Air behaves as a **perfect gas**
+- Flow is **isentropic**
+- Specific heat ratio: $\gamma = 1.4
+
+### Step-by-Step Theory
+
+#### Mach Number to Total Pressure
+
+For compressible, isentropic flow:
+
+$$
+\boxed{
+\frac{P_t}{P_s}
+=
+\left(1+\frac{\gamma-1}{2}M^2\right)^{\frac{\gamma}{\gamma-1}}
+}
+$$
+
+Where:
+- $M$ = Mach number
+- $P_s$ = Static pressure
+- $P_t$ = Total pressure
+
+---
+
+#### Impact Pressure
+
+Impact pressure is the pressure sensed by the pitot tube:
+
+$$
+\boxed{
+q_c = P_t - P_s
+}
+$$
+
+This is the **key measured quantity** in air-data systems.
+
+---
+
+#### Sea-Level Pressure Reference
+
+CAS is defined using **standard sea-level pressure**:
+
+$$
+P_0 = 101325 \ \text{Pa}
+$$
+
+This removes altitude dependence.
+
+---
+
+#### Impact Pressure to CAS
+
+Using the inverse compressible flow relation:
+
+$$
+\boxed{
+V_{CAS}
+=
+a_0
+\sqrt{
+\frac{2}{\gamma-1}
+\left[
+\left(1+\frac{q_c}{P_0}\right)^{\frac{\gamma-1}{\gamma}} - 1
+\right]
+}
+}
+$$
+
+Where:
+- $a_0$ = Speed of sound at sea level (≈ 340.262 m/s)
+
+## 5. Meaning of CAS (Intuition)
+
+- CAS represents the **sea-level equivalent speed**
+- Same CAS $\implies$ same **dynamic pressure**
+- Same dynamic pressure ⇒ same **aerodynamic forces**
+
+That is why:
+- Stall speeds are given in CAS
+- Structural limits use CAS
+- Control laws use CAS
+
+
+### Simulink Block Explanation
+
+#### Input Signals
+- **Mach** – from air-relative velocity
+- **Pressure (Pa)** – ambient static pressure from ISA model
+
+#### Internal Computation
+1. Mach $\rightarrow$ compressibility term
+2. Compute total pressure ratio
+3. Compute impact pressure $q_c$
+4. Normalize using sea-level pressure $P_0$
+5. Convert pressure back to velocity (CAS)
+
+### Output
+- **CAS (mps)** – Calibrated Airspeed in m/s
+
+---
 
 
