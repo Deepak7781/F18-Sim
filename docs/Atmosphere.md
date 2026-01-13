@@ -34,3 +34,48 @@ $$
     PV = \rho R T
 $$
 
+#### Temperature Profile
+
+For any atmospheric layer b
+
+$$
+    T(h) = T_b + L_b(h - h_b)
+$$
+
+where:
+- $T_b$ - Temperature at base of layer
+- $L_b$ - temperature lapse rate. (K/m)
+- $h_b$ - base altitude of layer
+
+|Layer|Altitude range|Lapse Rate|
+|-----|--------------|----------|
+|Troposphere|0 - 11 km| -0.0065 K/m|
+|Lower startosphere| 11 - 20 km| 0|
+
+#### Pressure Equations
+
+- Gradient Layer ($L_b \neq 0$)
+
+$$
+    P(h) = P_b\left(\frac{T(h)}{T_b}\right)^{\frac{-g_0}{L_bR}}
+$$
+
+- Isothermal Layer ($L_b = 0$)
+
+$$
+    P(h) = P_b e^{\left(-\frac{g(h - h_b)}{RT_b}\right)}
+$$
+
+#### Density Equation
+
+Using Ideal Gas Law
+
+$$
+    PV = \rho R T
+$$
+
+#### Speed of Sound
+
+$$
+    a(h) = \sqrt{\gamma RT  }
+$$
