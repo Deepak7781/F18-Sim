@@ -79,3 +79,43 @@ $$
 $$
     a(h) = \sqrt{\gamma RT  }
 $$
+
+### Complete Troposhere ISA (0 - 11 km)
+
+#### Temperature
+
+$$
+    T(h) = T_0 + Lh
+$$
+
+#### Pressure
+
+$$
+    P(h) = P_0\left(\frac{T(h)}{T_0}\right)^{\frac{-g_0}{LR}}
+$$
+
+#### Density
+
+$$
+    \rho(h) = \rho_0 \left(\frac{T(h)}{T_0}\right)^{\frac{-g0}{LR}-1}
+$$
+
+### Complete Stratosphere ISA (11 - 20 km)
+
+#### Temperature
+
+$$
+    T(h) = T_{11}
+$$
+
+#### Pressure
+
+$$
+    P(h) = P_{11}e^{-\frac{g(h - 11000)}{RT_{11}}}
+$$
+
+#### Density
+
+$$
+    \rho(h) = \rho_{11}e^{-\frac{g(h - 11000)}{RT_{11}}}
+$$
