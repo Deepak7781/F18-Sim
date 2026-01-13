@@ -129,7 +129,9 @@ $$
 - R = 287 $J/kg\cdot K$
 - $\gamma$ = 1.4
 
-## Finding Intermediate Variables
+## Calibrated Airspeed
+
+
 
 
 
