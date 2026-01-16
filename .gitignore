@@ -1,0 +1,8 @@
+# Ignore MATLAB backup and autosave files
+*.asv
+*.autosave
+
+# Ignore Simulink autosave and cache
+slprj/
+simulink_autosave.asv
+*.slxc
