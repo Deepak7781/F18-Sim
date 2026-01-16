@@ -49,10 +49,10 @@ The following parameters correspond to the F/A-18 configuration used in the simu
 
 ### Inertia Tensor Assumptions
 
-The product of inertia \( I_{xz} \) is not provided in the reference text.
+The product of inertia $I_{xz}$ is not provided in the reference text.
 For the low-angle-of-attack, symmetric F/A-18 configuration considered in this
 simulation, the aircraft is assumed to be mass-symmetric about the body
-\( x\text{-}z \) plane. Therefore,
+$x\text{-}z$ plane. Therefore,
 
 Ixz = 0
 
