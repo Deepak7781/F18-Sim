@@ -8,7 +8,7 @@ F18.Inertia = [31181.88 0 0;
                0 205113.07 0;
                0 0 230400.22]; % kg-m^2
 
-F18.Tmax = 96000; % For two engines - N
+F18.Tmax = 49000; % For two engines - N
 
 F18.rho_ref = 1.225; % kg/m3
 F18.V_ref = 200; % m/s
