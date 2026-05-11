@@ -15,5 +15,5 @@ F18.V_ref = 200; % m/s
 F18.alpha_t = 0; % Thrust angle - deg
 F18.nV = 0; 
 F18.nRho = 0.8;
-F18.x_f = -4.5; % Enigne distance on x axis from approximate CG position - m (- is aft of the CG)
-F18.z_f = 0.5; % Enigne distance on z axis from approximate CG position - m (+ is below the ref. plane)
+F18.x_f = -4.5; % Engine distance on x axis from approximate CG position - m (- is aft of the CG)
+F18.z_f = 0.5; % Engine distance on z axis from approximate CG position - m (+ is below the ref. plane)
