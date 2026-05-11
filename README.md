@@ -25,7 +25,8 @@ The primary objective of this project is to provide a **control-oriented and ana
 - Aerodynamic coefficients are modeled using **polynomial fits and linear coupling terms**
 - Aerodynamic data is sourced from:
 
-
+> **Sinha, N. K., & Ananthkrishnan, N.**  
+> *Advanced Flight Dynamics with Elements of Flight Control*
 
 This ensures the model remains **physically interpretable and mathematically tractable**, making it suitable for trimming and linearization in Simulink.
 
