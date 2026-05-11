@@ -254,22 +254,6 @@ That is why:
 - Control laws use CAS
 
 
-### Simulink Block Explanation
 
-#### Input Signals
-- **Mach** – from air-relative velocity
-- **Pressure (Pa)** – ambient static pressure from ISA model
-
-#### Internal Computation
-1. Mach $\rightarrow$ compressibility term
-2. Compute total pressure ratio
-3. Compute impact pressure $q_c$
-4. Normalize using sea-level pressure $P_0$
-5. Convert pressure back to velocity (CAS)
-
-### Output
-- **CAS (mps)** – Calibrated Airspeed in m/s
-
----
 
 
